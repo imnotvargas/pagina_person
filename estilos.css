@@ -1,0 +1,155 @@
+body{
+   margin: 0;/*Le indicamos que tendra un margen de 0, es decir no saldra la barra blanca toda fea de arriba*/
+   background: linear-gradient(90deg, #FF7BE8, white,#12BCFA);/*background es el fondo, linear gradiente queire decir que hara un degrado con los colores a elejir*/
+}
+
+header{
+  display: flex;/*Aqui indicamos que el menu lo ajustara de manera horizontal*/
+  background-color: rgba(32, 31, 31); /*Color de fondo de la sección */
+  color: white;/* Color del contenido */
+  justify-content: space-between;/*Justifica el contenido y space hace la funcion de separlos en cada esquina*/
+  height: 55px;/*Altura*/
+  padding: 5px;/*separacion que hay del borde con el item*/
+  align-items: center;
+}
+
+header img{
+  display: flex;
+  height: 55px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  word-spacing: 3px;
+  padding: 5px;
+}
+
+.logo h2{
+  padding-left: 15px;
+}
+
+header nav{
+  display: flex;
+  color: rgb(255, 255, 255);
+  word-spacing: 2px;/*Espacio que hay en cada palabra*/
+  letter-spacing: 3px;/*Espacio que hay en cada letra*/
+  align-items: center;
+  justify-content: right;
+}
+
+nav a{
+  font-weight: 600;/*Grosor de letras*/
+  padding-right: 15px;/*Separación que hay entre los items, en este caso en los links*/
+  text-decoration: none;/*Este quita el subrrayado y cualquier decoracion del texto*/
+  color: rgb(255, 255, 255);
+}
+
+main{
+padding: 50px 0px;
+}
+
+main h1{
+  color:white;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;/*Este le da un color de fondo a las letras*/
+}
+
+.redes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes img{
+  height: 40px;
+  padding: 20px;
+}
+
+main img{
+height: 350px;
+}
+
+.acerca{
+  background-image:url(../onda.jpg);/*Asi es como se pone una imagen como fondo desde css*/
+  background-repeat: no-repeat;/*Indicamos que el fondo no queremos que se repita, osea la misma imagen muchas veces*/
+  background-position: center ;
+  background-size: cover; /*Con esto nos encargamos de que la imagen quede de extremo a extremo*/
+  width: 100%;
+}
+
+.paralax{
+  width: 100%;
+  height: 50vh;
+  background:url(../humo.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paralax p{
+  width: 60%;
+  background-color: rgba(94, 140, 147, 0.353);
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;  
+  font-size: 3em;
+  font-weight:900;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 7px #fff, 0 0 10px white, 0 0 21px #fff, 0 0 82px #fb2727;
+ }
+
+/*Aquí comienza portafolio*/
+.portafolio{
+width: 100%;
+height: 50vh;
+background: url(../onda.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+text-align: center;
+justify-content: center;
+}
+
+.portafolio2{
+height: 80vh;
+display: flex;
+justify-content: center ;
+align-items: center;
+height: 60%;
+border: solid 3px;
+}
+
+.portafolio2 img{
+flex-grow: 1; /*Con esto le damos su espacio a cada imagen*/
+opacity: .8; /**/
+transition: .5s ease;
+}
+
+/* comienza contacto */
+.contacto1{
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 115, 0, 0.434);
+}
+
+/*hovers*/
+nav a:hover{
+  color: white;
+  text-shadow: 5px 5px 5px white;
+  text-decoration:underline;
+}
+
+.portafolio2 img:hover{
+  cursor: crosshair;
+  width: 40%;
+  opacity: 1;
+  filter: contrast(120%);
+}
